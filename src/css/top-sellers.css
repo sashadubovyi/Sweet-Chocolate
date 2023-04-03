@@ -1,0 +1,123 @@
+.sellers {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  text-align: center;
+  margin-bottom: 32px;
+  text-transform: uppercase;
+}
+
+.sellers-text {
+  display: block;
+  max-width: 306px;
+  font-weight: 400;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  margin-top: 20px;
+  text-align: left;
+}
+@media only screen and (min-width: 768px) {
+  .sellers-text {
+    display: none;
+  }
+}
+
+.sellers-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px 16px;
+}
+
+.sellers-img {
+  max-width: 335px;
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 15px;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .sellers-img {
+    max-width: 344px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sellers-img {
+    max-width: 368px;
+  }
+}
+
+.sellers-style {
+  color: var(--orange-color);
+}
+
+.sellers-displey {
+  display: none;
+}
+
+@media only screen and (min-width: 1200px) {
+  .sellers-displey {
+    display: flex;
+  }
+}
+
+.sellers-link-button {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .sellers-link-button {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sellers-link-button {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.sellers-button {
+  transition: color var(--animation-button), background var(--animation-button);
+}
+
+.sellers-button:hover,
+.sellers-button:focus {
+  color: var(--orange-color);
+  background: var(--button-hover-color);
+}
+
+@media only screen and (max-width: 768px) {
+  .sellers-text-button {
+    display: none;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+  .sellers-text-button {
+    display: block;
+    max-width: 306px;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .sellers-text-button {
+    display: block;
+    max-width: 407px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .sellers-link img {
+    transition: transform 3000ms linear;
+  }
+
+  .sellers-link:hover img {
+    transform: scale(1.3);
+  }
+
+  .sellers-link {
+    border-radius: 15px;
+    overflow: hidden;
+  }
+}

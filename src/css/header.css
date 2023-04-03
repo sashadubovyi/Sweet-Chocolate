@@ -1,0 +1,157 @@
+.container-header {
+  position: relative;
+}
+
+@media screen and (min-width: 1200px) {
+  .display-none {
+    display: none;
+  }
+}
+
+.icon-chocolate-header {
+  position: absolute;
+  right: 0;
+}
+
+.icon-burger {
+  background-color: var(--white-color);
+  stroke: var(--main-color);
+}
+.icon-burger:hover,
+.icon-burger:hover {
+  stroke: var(--orange-color);
+}
+.logo-link {
+  position: relative;
+  padding-right: 25px;
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.03em;
+  color: #111111;
+  padding-top: 23.5px;
+  padding-bottom: 17.5px;
+}
+@media screen and (min-width: 768px) {
+  .logo-link {
+    padding-top: 29.5px;
+    padding-bottom: 29.5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .logo-link {
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 26px;
+    padding-bottom: 34px;
+    margin-right: 188px;
+  }
+}
+.menu-toggle {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  border: none;
+  background-color: var(--background-color);
+  margin-left: auto;
+}
+
+.nav {
+  display: flex;
+}
+
+.menu-header {
+  display: flex;
+  gap: 24px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: -0.02em;
+  color: var(--main-color);
+}
+
+.socials-header {
+  display: flex;
+  margin-left: auto;
+  gap: 18px;
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+@media screen and (max-width: 1199px) {
+  .menu-header,
+  .socials-header {
+    display: none;
+  }
+}
+
+.logo-span {
+  font-style: italic;
+}
+
+.icon-social-svg {
+  fill: none;
+  stroke: var(--main-color);
+}
+.icon-social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon-social-link:hover .icon-social-svg,
+.icon-social-link:focus .icon-social-svg {
+  stroke: var(--orange-color);
+}
+
+.header-menu-link {
+  display: block;
+  padding-top: 28px;
+  padding-bottom: 32px;
+  position: relative;
+}
+
+/* animation */
+
+.header-menu-link::before,
+.header-menu-link::after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 1px;
+  background-color: var(--orange-color);
+  transition: 0.2s linear;
+}
+
+.header-menu-link::after {
+  left: 0;
+  bottom: 25px;
+}
+
+.header-menu-link::before {
+  right: 0;
+  top: 20px;
+}
+
+.header-menu-link:hover::after,
+.header-menu-link:hover::before,
+.header-menu-link:focus::after,
+.header-menu-link:focus::before {
+  width: 100%;
+}
+
+/* /animation */
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: var(--orange-color);
+}
+
+.icon-social-item {
+  transition: 0.35s linear;
+}
+
+.icon-social-item:hover {
+  transform: rotate(1turn);
+}
